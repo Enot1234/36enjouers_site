@@ -50,27 +50,33 @@
 </head>
 <body>
     <!--Верхняя полоса сайта-->
-     <div class="Container">
+    <div class="Container">
 
         <header class="Header"></header>
 
-     </div>
+    </div>
 
     <!-- Просто нужный объект -->
     <div class="object"></div>
-
-    <!-- Подключение JS  -->
-    <script src="{% static 'JS/main.js' %}"></script>
 
     <!-- Основная часть сайта -->
     <div class="text">
         <h1 class="p_TEXT">
             Добро пожаловать на нашу уникальную образовательную платформу!
         </h1>
-        <div class="imgbox">
-            <img class="center-fit" src="/static/images/test_image.png" alt="Cool_TEst_image">
+        
+        <div class="Slayder">
+            <div class="images_slaider">
+                <img id="1" src="{% static 'images/test_image.png' %}" alt="Cool_TEst_image"/>
+                <img id="2" src="{% static 'images/test_image2.jpg' %}" alt="Cool_TEst_image"/>
+                <img id="3" src="{% static 'images/test_image3.png' %}" alt="Cool_TEst_image"/>
+            </div>             
         </div>
-    </div>
-</body>
 
+    </div>
+
+
+    <!-- Подключение JS  -->
+    <script src="{% static 'JS/main.js' %}"></script>
+</body>
 </html>

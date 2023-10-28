@@ -190,28 +190,15 @@ body {background: #282622;}
     flex-shrink:0;
 }
 
+
+
 .p_TEXT{
     color:#FFFFFF;
 }
 
-.imgbox {
-    display: grid;
-    height: 100%;
-}
+
 .center-fit {
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
-}
-
-.images_slaider {
-    display: flex;
-    width: 100%;
-    transition: all 0.6s;
-    
-}
-
-.images_slaider img {
-    width: 100%;
-    flex-shrink:0;
 }

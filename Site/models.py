@@ -1,17 +1,19 @@
 from django.db import models
 
 
-class Schools(models.Model):
-    FIO = models.TextField("ФИО")
-    tel = models.IntegerField("Телефон", max_length=8)
+class school(models.Model):
+    FIO = models.CharField("ФИО", max_length=70)
+    tel = models.IntegerField("Телефон")
     email = models.EmailField("email")
-    INN = models.PositiveIntegerField("Телефон", max_length=10)
+    INN = models.PositiveIntegerField("Телефон")
     name = models.CharField("Название организации", max_length=50)
-    adress = models.TextField("Адрес организации")
+    adress = models.CharField("Адрес организации", max_length=200)
+
+
+    def __str__(self):
+        return self.name
+
 
     class Meta:
         verbose_name = "Организация"
         verbose_name_plural = "Организация"
-
-    def __str__(self):
-        return self.name
