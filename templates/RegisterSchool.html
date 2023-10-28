@@ -7,11 +7,28 @@
 </head>
 <body>
     <div>
-        <form action="{% url 'organization' %}" method="post">
+        <form action="{% url 'organization' %}" method="post">{% csrf_token %}
+
+            <h1>Введите ФИО</h1>
             <input class="fio" type="text">
-            <input class="tel" type="tel" maxlength="8">
+
+            <h1>Введите номер телефона</h1>
+            <input class="tel" type="tel" maxlength="8" minlength="8">
+
+            <h1>Введите email</h1>
             <input class="email" type="email">
-            <input type="submit">
+
+            <h1>Введите ИНН</h1>
+            <input class="inn" type="tel" maxlength="10" minlength="10">
+
+            <h1>Введите название организации</h1>
+            <input class="name" type="text">
+
+            <h1>Введите адрес организации</h1>
+            <input class="address" type="text">
+
+            <input type="submit" value="Отпраить данные">
+
         </form>
     </div>
 </body>
