@@ -14,21 +14,21 @@ body {
     display: block;
 }
 
-.Header a:link
+.link a:link
 {
     color: #FF9E02;
     background-color: transparent;
     text-decoration: none;
 }
 
-.Header a:visited
+.link a:visited
 {
     color: #c97c00;
     background-color: transparent;
     text-decoration: none;
 }
 
-.Header p{
+.link p{
     display: inline;
     margin-right: 90px;
     padding: 3px;
@@ -36,6 +36,13 @@ body {
     font-family: 'Bebas Neue', sans-serif;
     margin-top: 100px;
 }
+
+link {
+    position: fixed;
+    top: 50px;
+    left: 30%;
+}
+
 
 /* Логотип */
 .Logo {
@@ -237,6 +244,7 @@ body {
     margin: auto;
 }
 
+
 /*ДЛя картинок слева ёпта и текста*/
 .info_conteiner{
     border: 40px solid transparent;
@@ -254,6 +262,7 @@ body {
 .info_conteiner p{
     color:#FFFFFF;
     text-align: left;
+    margin-bottom: 250px;
 }
 
 .left{
@@ -268,11 +277,6 @@ body {
     height: 32%;
     float: right;
     padding: 0 20px 20px 0;
-}
-
-.info_conteiner p{
-    margin-bottom: 250px;
-    color:#FFFFFF;
 }
 
 .ending{
