@@ -108,9 +108,11 @@
             МОИ ТЕСТЫ
         </h1></div>
 
+    {% for el in tests %}
     <div id="plan1" class="info_conteiner">
-
+        <p>{{ el.title }}{{ el.link }}</p>
     </div>
+    {% endfor %}
 
     <div class="text">
         <h1 class="p_TEXT">
@@ -118,7 +120,7 @@
         </h1></div>
 
     <div id="plan1" class="info_conteiner">
-        
+
     </div>
 
 
