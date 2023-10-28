@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+from .forms import RegSchool
 
 
 def home(request):
@@ -12,7 +13,7 @@ def tariffs(request):
     return render(request, "tariffs.html")
 
 def register(request):
-    return render(request, "RegisterSchool.html", {"model": school.objects.all()})
+    return render(request, "register/RegisterSchool.html", {"model": school.objects.all()})
 
 def organization(request):
     pass
