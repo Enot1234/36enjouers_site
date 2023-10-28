@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path("", views.lichniy_kabinet, name="home")
+    path("", views.lichniy_kabinet, name="ustrpanel")
 ]
