@@ -43,6 +43,30 @@ body {
     left: 30%;
 }
 
+.left-right a:link
+{
+    color: #FF9E02;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.left-right a:visited
+{
+    color: #c97c00;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.left-right {
+    text-align: right;
+    margin-right: 90px;
+}
+
+.left-right p{
+    font-size: 130%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
 
 /* Логотип */
 .Logo {
