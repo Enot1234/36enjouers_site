@@ -5,4 +5,4 @@ def lichniy_kabinet(request):
     tests = Test.objects.all()
     for i in tests:
         print(i.title)
-    return render(request, "lichniy_kabinet.html", {"tests":tests})
+    return render(request, "ofice/lichniy_kabinet.html", {"tests": tests})
