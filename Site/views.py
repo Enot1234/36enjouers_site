@@ -13,3 +13,6 @@ def tariffs(request):
 
 def register(request):
     return render(request, "RegisterSchool.html", {"model": school.objects.all()})
+
+def organization(request):
+    pass
