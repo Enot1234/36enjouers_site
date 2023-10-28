@@ -7,8 +7,10 @@
 </head>
 <body>
     <div>
-        <form action="{% url 'register_school' %}" method="post">
-            <input type="text">
+        <form action="{% url 'organization' %}" method="post">
+            <input class="fio" type="text">
+            <input class="tel" type="tel" maxlength="8">
+            <input class="email" type="email">
             <input type="submit">
         </form>
     </div>
