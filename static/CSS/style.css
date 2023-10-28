@@ -10,6 +10,31 @@ body {
     top: 0px;
     background: #353434;
     z-index: 1;
+    text-align: center;
+    display: block;
+}
+
+.Header a:link
+{
+    color: #FF9E02;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Header a:visited
+{
+    color: #c97c00;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.Header p{
+    display: inline;
+    margin-right: 90px;
+    padding: 3px;
+    font-size: 130%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin-top: 100px;
 }
 
 /* Логотип */
