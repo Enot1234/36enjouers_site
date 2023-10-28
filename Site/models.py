@@ -1,8 +1,9 @@
 from django.db import models
+from django.conf import settings
 
 
 class school(models.Model):
-    user = models.CharField(max_length=50)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     FIO = models.CharField("ФИО", max_length=70)
     tel = models.IntegerField("Телефон")
     email = models.EmailField("email")

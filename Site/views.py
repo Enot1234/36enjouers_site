@@ -21,7 +21,7 @@ def register(request):
 
         if form.is_valid():
             post = form.save(commit=False)
-            post.fio = request.user
+            post.user = request.user
             post.save()
         
         return redirect('organization', pk=post.id)
