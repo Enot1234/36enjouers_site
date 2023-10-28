@@ -3,7 +3,8 @@ from .models import school
 
 
 class RegSchool(forms.ModelForm):
-    pass
 
-    # class Meta:
-    #     model = school
+
+    class Meta:
+        model = school
+        fields = ('name', 'tel', 'email', 'INN', 'adress', 'FIO',)

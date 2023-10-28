@@ -13,7 +13,8 @@ def tariffs(request):
     return render(request, "tariffs.html")
 
 def register(request):
-    return render(request, "register/RegisterSchool.html", {"model": school.objects.all()})
+    form = RegSchool()
+    return render(request, "register/RegisterSchool.html", {"model": form})
 
 def organization(request):
     pass
