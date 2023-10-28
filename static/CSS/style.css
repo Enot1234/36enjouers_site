@@ -50,33 +50,8 @@ body {
     width: 166px;
     height: 31px;
     left: 61px;
-    top: 75px;
+    top: 48px;
     z-index: 2;
-}
-
-
-/* Поиск игр */
-.search {
-    outline: none;
-    color: white;
-    padding-left: 50px;
-    border: none;
-    background: transparent;
-}
-
-.search_icons, .search{
-    position: fixed;
-    width: 900px;
-    height: 45px;
-    top: 67px;
-    border-radius: 20px;
-    opacity: 0.800000011920929px;
-    z-index: 2;
-}
-
-.align_search {
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -84,7 +59,7 @@ body {
 .Burger_menu {
     width: 63px;
     height: 65px;
-    top: 40px;
+    top: 20px;
     padding: 16.25px 10.5px 16px 10px;
     z-index: 2;
     position: fixed;
