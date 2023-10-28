@@ -1,4 +1,5 @@
-body {background: #282622;}
+body {
+        background: #282622;}
 
 /* Вся верхняя часть */
 .Header {
@@ -172,15 +173,19 @@ body {background: #282622;}
 
 /* Слайдер */
 .Slayder {
-    max-width: 320px;
-    margin: 65px 0px 40px 60px; 
-    box-shadow: 0 9px 18px -4px rgba(0, 0, 0, 0.69);
+    max-width: 160vh;
+    /*margin: 65px 100px 40px 60px;*/
+    /*box-shadow: 0 9px 18px -4px rgba(0, 0, 0, 0.69);
+    size: auto ;*/
     overflow: hidden;
+    display: grid;
+    height: 100%;
+    margin: auto;
 }  
 
 .images_slaider {
     display: flex;
-    width: 100%;
+    /*width: 100%;*/
     transition: all 0.6s;
     
 }
@@ -188,6 +193,10 @@ body {background: #282622;}
 .images_slaider img {
     width: 100%;
     flex-shrink:0;
+
+    max-width: 100%;
+    max-height: 70vh;
+    margin: auto;
 }
 
 
@@ -201,4 +210,56 @@ body {background: #282622;}
     max-width: 100%;
     max-height: 100vh;
     margin: auto;
+}
+
+/*ДЛя картинок слева ёпта и текста*/
+.info_conteiner{
+    border: 40px solid transparent;
+    font-family: 'Bebas Neue', sans-serif;
+    color:#FFFFFF;
+    font-size: 30px;
+}
+
+.info_conteiner h2{
+    color:#FFFFFF;
+    text-align: center;
+
+}
+
+.info_conteiner p{
+    color:#FFFFFF;
+    text-align: left;
+}
+
+.left{
+    width: 32%;
+    height: 32%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.right{
+    width: 32%;
+    height: 32%;
+    float: right;
+    padding: 0 20px 20px 0;
+}
+
+.info_conteiner p{
+    margin-bottom: 250px;
+    color:#FFFFFF;
+}
+
+.ending{
+    font-family: 'Bebas Neue', sans-serif;
+    border: 40px solid transparent;
+    font-size: 30px;
+    color:#FFFFFF;
+}
+
+.phase{
+    font-family: 'Bebas Neue', sans-serif;
+    border: 40px solid transparent;
+    text-align: center; 
+    color:#FFFFFF;
 }
