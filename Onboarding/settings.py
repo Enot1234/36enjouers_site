@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Site.apps.SiteConfig",
-    "userpanel"
+    "userpanel.apps.UserpanelConfig",
 ]
 
 MIDDLEWARE = [
