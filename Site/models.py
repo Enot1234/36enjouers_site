@@ -2,6 +2,7 @@ from django.db import models
 
 
 class school(models.Model):
+    user = models.CharField(max_length=50)
     FIO = models.CharField("ФИО", max_length=70)
     tel = models.IntegerField("Телефон")
     email = models.EmailField("email")
