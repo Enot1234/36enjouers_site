@@ -22,6 +22,52 @@ body {background: #282622;}
 }
 
 
+/* Поиск игр */
+.search {
+    outline: none;
+    color: white;
+    padding-left: 50px;
+    border: none;
+    background: transparent;
+}
+
+.search_icons, .search{
+    position: fixed;
+    width: 900px;
+    height: 45px;
+    top: 67px;
+    border-radius: 20px;
+    opacity: 0.800000011920929px;
+    z-index: 2;
+}
+
+.align_search {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* То самое бургер меню */
+.Burger_menu {
+    width: 63px;
+    height: 65px;
+    top: 40px;
+    padding: 16.25px 10.5px 16px 10px;
+    z-index: 2;
+    position: fixed;
+    cursor: pointer;
+}
+
+.Burger_menu:hover{
+    fill-opacity: 0.5;
+}
+
+.align_burger_menu {
+    display: flex;
+    justify-content: right;
+}
+
+
 /* Просто нужный объект */
 .object {
     width: 100%;
@@ -34,9 +80,11 @@ body {background: #282622;}
 
 /* Основная часть сайта */
 .text {
-    margin-left: calc(50% - 774px/2);
+    /*/*margin-left: calc(50% - 774px/2);
     margin-right: calc(50% - 774px/2);
-    font-family: 'Kodchasan';
+    /*font-family: 'Kodchasan';*/
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 
@@ -61,7 +109,7 @@ body {background: #282622;}
     color: #FFFFFF;
 }
 
-/* Блоки */
+/* Игры */
 
 .game h2 {
     display: flex;
@@ -122,3 +170,26 @@ body {background: #282622;}
     fill-opacity: 0.5;
 }
 
+/* Слайдер */
+.Slayder {
+    max-width: 320px;
+    margin: 65px 0px 40px 60px; 
+    box-shadow: 0 9px 18px -4px rgba(0, 0, 0, 0.69);
+    overflow: hidden;
+}  
+
+.images_slaider {
+    display: flex;
+    width: 100%;
+    transition: all 0.6s;
+    
+}
+
+.images_slaider img {
+    width: 100%;
+    flex-shrink:0;
+}
+
+.p_TEXT{
+    color:#FFFFFF;
+}
