@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="201185c3-a96a-4bc1-bbe0-b6aa0effb003" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Site/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Site/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Site/views.py" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/userpanel/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Onboarding/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Onboarding/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userpanel/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userpanel/views.py" afterDir="false" />
+>>>>>>> 9e1b61d678cd4e8df13e7d73e3c2cf770a72b948
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,9 +36,20 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/admin/Documents/GitHub/36enjouers_site"
   }
 }]]></component>
+=======
+    "last_opened_file_path": "C:/Users/admin/Documents/GitHub/36enjouers_site/userpanel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Documents\GitHub\36enjouers_site\userpanel" />
+    </key>
+  </component>
+>>>>>>> 9e1b61d678cd4e8df13e7d73e3c2cf770a72b948
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
