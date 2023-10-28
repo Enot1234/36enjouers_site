@@ -24,7 +24,7 @@ def register(request):
             post.fio = request.user
             post.save()
         
-        return redirect('organization', pk=post.name)
+        return redirect('organization', pk=post.id)
     else:
         form = RegSchool()
 
@@ -32,7 +32,7 @@ def register(request):
 
 
 def organization(request, pk):
-    bd = school.objects.filter(name = pk)
+    bd = school.objects.filter(id = pk)
 
     return render(request, "ofice/organization.html", {"model": bd})
 
