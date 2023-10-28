@@ -283,3 +283,19 @@ body {
 .reg h1{
     margin-bottom: 50px;
 }
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropbtn:hover {
+    background-color: #285d29;
+    color: rgb(166, 166, 166);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
