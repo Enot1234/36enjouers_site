@@ -34,5 +34,5 @@ def register(request):
 def organization(request, pk):
     bd = school.objects.filter(id = pk)
 
-    return render(request, "ofice/organization.html", {"model": bd})
+    return render(request, "office/organization.html", {"model": bd})
 
