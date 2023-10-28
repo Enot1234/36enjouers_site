@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import *
 
 
 def home(request):
@@ -9,3 +10,6 @@ def laborinfo(request):
 
 def tariffs(request):
     return render(request, "tariffs.html")
+
+def register(request):
+    return render(request, "RegisterSchool.html", {"model": school.objects.all()})
