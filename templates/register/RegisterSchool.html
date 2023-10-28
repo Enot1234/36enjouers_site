@@ -13,30 +13,12 @@
 
     <div class="reg">
         <h1>Регистрация организации</h1>
-        <form action="{% url 'organization' %}" method="post">{% csrf_token %}
-            
-            <h3>Введите ФИО (Обязательное поле)</h3>
-            <input class="fio" type="text" size="40">
-
-            <h3>Введите номер телефона (Обязательное поле)</h3>
-            <input class="tel" type="tel" maxlength="8" minlength="8" size="40">
-
-            <h3>Введите email (Обязательное поле)</h3>
-            <input class="email" type="email" size="40">
-
-            <h3>Введите ИНН (Обязательное поле)</h3>
-            <input class="inn" type="tel" maxlength="10" minlength="10" size="40">
-
-            <h3>Введите название организации (Обязательное поле)</h3>
-            <input class="name" type="text" size="40">
-
-            <h3>Введите адрес организации (Обязательное поле)</h3>
-            <input class="address" type="text" size="40">
-
-            <h3>Все готово? Тогда перепроверте и отправте!!!</h3>
-            <input type="submit" value="Отправить данные" size="40">
-
+        
+        <form method="POST">{% csrf_token %}
+            {{ model.as_p }}
+            <button type="submit" size="40">Отправить данные</button>
         </form>
+
     </div>
 </body>
 </html>

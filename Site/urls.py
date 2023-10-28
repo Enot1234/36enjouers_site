@@ -7,5 +7,5 @@ urlpatterns = [
     path("laborinfo/", laborinfo, name="laborinfo"),
     path("tariffs/", tariffs, name="tariffs"),
     path("register/", register, name="registerschool"),
-    path("organization/", organization, name="organization")
+    path("organization/<str:pk>/", organization, name="organization")
 ]
