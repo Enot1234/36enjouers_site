@@ -21,5 +21,5 @@ from Site.views import home
 urlpatterns = [
     path("admin", admin.site.urls),
     path("", include("Site.urls")),
-    path("userpanel", include("userpanel.urls"))
+    path("userpanel/", include("userpanel.urls"))
 ]
