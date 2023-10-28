@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import *
-from .forms import RegSchool
+from .forms import *
 
 
 def home(request):
@@ -15,7 +15,7 @@ def tariffs(request):
     return render(request, "tariffs.html")
 
 
-def register(request):
+def registerSchool(request):
     if request.method == "POST":
         form = RegSchool(request.POST)
 
@@ -29,6 +29,15 @@ def register(request):
         form = RegSchool()
 
     return render(request, "register/RegisterSchool.html", {"model": form})
+
+
+def regUser(request):
+    if request.method == "POST":
+        form = RegUser(request.POST)
+    else:
+        form = RegUser()
+
+    return render(request, "register/RegisterUser.html", {"model": form})
 
 
 def organization(request, pk):
