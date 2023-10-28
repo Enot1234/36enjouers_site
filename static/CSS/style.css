@@ -1,5 +1,5 @@
 body {
-        background: #282622;}
+        background: #292621;}
 
 /* Вся верхняя часть */
 .Header {
@@ -270,8 +270,14 @@ body {
 
 /* Код для регистрации */
 .reg{
+    background-color: #302d27;
     color:#FFFFFF;
     font-family: 'Bebas Neue', sans-serif;
+    margin: auto;
+    width: 50%;
+    border: 3px solid #1e1c18;
+    padding: 10px;
+    box-shadow: 0 9px 18px -4px #0c0c0a;
 }
 
 .reg h1{
