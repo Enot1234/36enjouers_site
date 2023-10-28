@@ -8,6 +8,7 @@ class school(models.Model):
     INN = models.PositiveIntegerField("INN")
     name = models.CharField("Название организации", max_length=50)
     adress = models.CharField("Адрес организации", max_length=200)
+    user = models.CharField("Пользователь", max_length=50)
 
 
     def __str__(self):
