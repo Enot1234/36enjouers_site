@@ -1,8 +1,11 @@
 from django.shortcuts import render
+from .models import Study
+from .models import Result
 from .models import Test
 
 def lichniy_kabinet(request):
     tests = Test.objects.all()
-    for i in tests:
-        print(i.title)
-    return render(request, "office/lichniy_kabinet.html", {"tests": tests})
+    results = Result.objects.all()
+    courses = Study.objects.all()
+
+    return render(request, "office/lichniy_kabinet.html", {"tests": tests, "results": results, "courses": courses})

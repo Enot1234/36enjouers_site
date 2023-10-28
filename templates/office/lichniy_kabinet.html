@@ -96,11 +96,9 @@
 
 
     <div id="plan1" class="info_conteiner">
-        <!-- <img class="left" src="{% static 'images/time.jpg' %}" alt="idk"> -->
-        <h4>Основная информация</h4>
-        <p>Основные обязанности работника</p>
-        <p>Техника безопасности</p>
-        <p>Введение</p>
+        {% for el in courses %}
+        <a href="{{ el.link }}">{{ el.title }}</a>
+        {% endfor %}
     </div>
 
     <div class="text">
@@ -110,7 +108,7 @@
     </div>
 
     
-    <div id="plan1" class="info_conteiner">
+    <div id="plan2" class="info_conteiner">
         {% for el in tests %}
         <a href="{{ el.link }}">{{ el.title }}</a>
         {% endfor %}
@@ -121,6 +119,12 @@
         <h1 class="p_TEXT">
             МОИ РЕЗУЛЬТАТЫ
         </h1>
+    </div>
+
+    <div id="plan3" class="info_conteiner">
+        {% for el in results %}
+        <a href="{{ el.link }}">{{ el.title }}</a>
+        {% endfor %}
     </div>
 
     <div id="plan1" class="info_conteiner">
