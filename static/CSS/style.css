@@ -288,3 +288,13 @@ body {
     text-align: center; 
     color:#FFFFFF;
 }
+
+/* Код для регистрации */
+.reg{
+    color:#FFFFFF;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.reg h1{
+    margin-bottom: 50px;
+}
