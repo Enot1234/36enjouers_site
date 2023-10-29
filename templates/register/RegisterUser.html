@@ -16,13 +16,7 @@
         
         <form method="POST">{% csrf_token %}
 
-            <br><label for="id_username">Введите имя пользователя: </label>{{ model.username }}</br>
-
-            <br><label for="id_email">Введите email: </label>{{ model.email }}</br>
-
-            <br><label for="id_password1">Введите пароль: </label>{{ model.password1 }}</br>
-
-            <br><label for="id_password2">Повторите пароль: </label>{{ model.password2 }}</br>
+            {{ model.as_p }}
 
             <br><button class="dropbtn" type="submit" size="40">Отправить данные</button></br>
         </form>
