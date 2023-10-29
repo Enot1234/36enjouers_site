@@ -373,6 +373,29 @@ input {
 
 .reg h1{
     margin-bottom: 50px;
+
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    border: 20px solid #4CAF50;;
+    text-decoration: none;
+    color: black;
+    background-color: #4CAF50;
+}
+
+a.button:hover {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    border: 20px solid #285d29;
+    text-decoration: none;
+    color: black;
+    background-color: #285d29;
 }
 
 .dropbtn {
@@ -391,3 +414,4 @@ input {
     font-size: 16px;
     border: none;
 }
+
