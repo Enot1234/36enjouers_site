@@ -464,14 +464,20 @@
         <header class="Header">
             <div class="link">
                 <p><a href="/laborinfo/">Инфо</a></p>
-                <p><a href="/userpanel/">Личный кабинет</a></p>
                 <p><a href="/tariffs/">Тарифы</a></p>
+                {% if user.is_authenticated %}
                 <p><a href="/register/">Регистрация организации</a></p>
+                {% endif %}
             </div>
 
             <div class="left-right">
-                <p><a href="/registeruser/">Регистрация</a></p>
-                <p class="login"><a href="login">Вход</a></p>
+                {% if user.is_authenticated %}
+                    <p><a href="/userpanel/">Личный кабинет</a></p>
+                    <p class="login"><a href="/logout/">Выход</a></p>
+                {% else %}
+                    <p><a href="/registeruser/">Регистрация</a></p>
+                    <p class="login"><a href="/login/">Вход</a></p>
+                {% endif %}
             </div>
         </header>
     </div>
