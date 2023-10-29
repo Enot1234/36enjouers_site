@@ -12,12 +12,9 @@
 <body>
 
     <div class="reg">
-        <h1>Вход</h1>
+        <h1>Вы вышли из своей учетной записи</h1>
 
-        <form method="POST">{% csrf_token %}
-            {{ form }}
-            <button class="dropbtn" type="submit" size="40">Отправить данные</button>
-        </form>
+        <a href="{% url 'log' %}">Войти</a>
 
     </div>
 </body>
