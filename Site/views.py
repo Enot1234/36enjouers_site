@@ -1,4 +1,6 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import *
 from .forms import *
 
@@ -14,7 +16,7 @@ def laborinfo(request):
 def tariffs(request):
     return render(request, "tariffs.html")
 
-
+@login_required
 def registerSchool(request):
     if request.method == "POST":
         form = RegSchoolForm(request.POST)
@@ -34,19 +36,21 @@ def registerSchool(request):
 def regUser(request):
     if request.method == "POST":
         form = RegUserForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+    
+            messages.success(request, 'Ваш аккаунт создан: можно войти на сайт.')
+            return redirect('log')
     else:
         form = RegUserForm()
 
     return render(request, "register/RegisterUser.html", {"model": form})
 
 
+@login_required
 def organization(request, pk):
     bd = school.objects.filter(id = pk)
 
     return render(request, "office/organization.html", {"model": bd})
 
-def login(request):
-    if request.method == "POST":
-        return redirect('home')
-
-    return render(request, "register/login.html")
