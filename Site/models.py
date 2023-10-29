@@ -12,6 +12,7 @@ class school(models.Model):
     adress = models.CharField("Адрес организации", max_length=200)
 
 
+
     def __str__(self):
         return self.name
 
