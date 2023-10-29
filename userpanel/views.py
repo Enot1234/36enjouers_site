@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from .models import Study
 from .models import Result
 from .models import Test
-from Site.models import school
+from Site.models import school, curs
 from django.contrib.auth.decorators import login_required
 from .forms import *
 
@@ -16,8 +16,8 @@ def lichniy_kabinet(request):
 
     if str(group) == "Преподователь":
         return redirect('adminpanel')
-    else:
-        return render(request, "office/PersonalArea.html", {"tests": tests, "results": results, "courses": courses, "user": usr, "group": group})
+    
+    return render(request, "office/PersonalArea.html", {"tests": tests, "results": results, "courses": courses, "user": usr, "group": group})
 
 
 @login_required
@@ -29,6 +29,8 @@ def adminarea(request):
 
     return render(request, "office/PersonalAdminArea.html", {"orgname": orgname, "user": usr, "group": group})
 
+
+@login_required
 def AddCource(request):
     if request.method == "POST":
         form = AddCorceForm(request.POST)
@@ -46,6 +48,7 @@ def AddCource(request):
     return render(request, "office/add/cource.html", {"form": form})
 
 
+@login_required
 def AddTest(request):
     if request.method == "POST":
         form = AddTestForm(request.POST)

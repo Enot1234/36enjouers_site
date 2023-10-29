@@ -20,3 +20,8 @@ class school(models.Model):
     class Meta:
         verbose_name = "Организация"
         verbose_name_plural = "Организация"
+
+class curs(models.Model):
+    school = models.ForeignKey(school, on_delete=models.CASCADE)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+

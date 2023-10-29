@@ -54,3 +54,17 @@ def organization(request, pk):
 
     return render(request, "office/organization.html", {"model": bd})
 
+def addcurs(request):
+    if request.method == "POST":
+        form = AddCursForm(request.POST)
+
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.user = request.user
+            post.save()
+    
+            return redirect('home')
+    else:
+        form = AddCursForm()
+
+    return render(request, "addcurs.html", {"form": form})
