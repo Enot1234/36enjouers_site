@@ -367,18 +367,12 @@ input {
     border: 3px solid #1e1c18;
     padding: 10px;
     box-shadow: 0 9px 18px -4px #0c0c0a;
+    margin: auto;
 }
 
-.reg label{
-    margin-right: 150%;
-}
 
 .reg h1{
     margin-bottom: 50px;
-}
-
-.seks{
-    align-content: center;
 }
 
 .dropbtn {
