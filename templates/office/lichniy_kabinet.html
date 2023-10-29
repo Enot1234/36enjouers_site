@@ -472,7 +472,7 @@
 
             <div class="left-right">
                 {% if user.is_authenticated %}
-                    <p><a href="/userpanel/">Личный кабинет</a></p>
+                    <p><a href="/userpanel/">Текущий пользователь: {{ user }}</a></p>
                     <p class="login"><a href="/logout/">Выход</a></p>
                 {% else %}
                     <p><a href="/registeruser/">Регистрация</a></p>
