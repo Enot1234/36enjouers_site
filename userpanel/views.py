@@ -11,4 +11,8 @@ def lichniy_kabinet(request):
     courses = Study.objects.filter(user=request.user)
     usr = request.user
 
-    return render(request, "office/lichniy_kabinet.html", {"tests": tests, "results": results, "courses": courses, "user": usr})
+    return render(request, "office/PersonalArea.html", {"tests": tests, "results": results, "courses": courses, "user": usr})
+
+@login_required
+def adminarea(request):
+    return render(request, "office/PersonalAdminArea.html")

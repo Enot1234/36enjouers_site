@@ -487,51 +487,52 @@
     <div class="object"></div>
 
     <!-- Основная часть сайта -->
-    <div class="text">
-        <h1 class="p_TEXT">
-            МОЕ ОБУЧЕНИЕ
-        </h1>
+    {% block content %}
+        <div class="text">
+            <h1 class="p_TEXT">
+                МОЕ ОБУЧЕНИЕ
+            </h1>
 
 
-    </div>
+        </div>
 
 
-    <div id="plan1" class="info_conteiner">
-        {% for el in courses %}
-        <a href="{{ el.link }}">{{ el.title }}</a>
-        {% endfor %}
-    </div>
+        <div id="plan1" class="info_conteiner">
+            {% for el in courses %}
+            <a href="{{ el.link }}">{{ el.title }}</a>
+            {% endfor %}
+        </div>
 
-    <div class="text">
-        <h1 class="p_TEXT">
-            МОИ ТЕСТЫ
-        </h1>
-    </div>
+        <div class="text">
+            <h1 class="p_TEXT">
+                МОИ ТЕСТЫ
+            </h1>
+        </div>
 
-    
-    <div id="plan2" class="info_conteiner">
-        {% for el in tests %}
-        <a href="{{ el.link }}">{{ el.title }}</a>
-        {% endfor %}
-    </div>
-    
+        
+        <div id="plan2" class="info_conteiner">
+            {% for el in tests %}
+            <a href="{{ el.link }}">{{ el.title }}</a>
+            {% endfor %}
+        </div>
+        
 
-    <div class="text">
-        <h1 class="p_TEXT">
-            МОИ РЕЗУЛЬТАТЫ
-        </h1>
-    </div>
+        <div class="text">
+            <h1 class="p_TEXT">
+                МОИ РЕЗУЛЬТАТЫ
+            </h1>
+        </div>
 
-    <div id="plan3" class="info_conteiner">
-        {% for el in results %}
-        <a href="{{ el.link }}">{{ el.title }}</a>
-        {% endfor %}
-    </div>
+        <div id="plan3" class="info_conteiner">
+            {% for el in results %}
+            <a href="{{ el.link }}">{{ el.title }}</a>
+            {% endfor %}
+        </div>
 
-    <div id="plan1" class="info_conteiner">
+        <div id="plan1" class="info_conteiner">
 
-    </div>
-
+        </div>
+    {% endblock %}
 
 
     <!-- Подключение JS  -->
