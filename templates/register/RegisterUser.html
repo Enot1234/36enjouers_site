@@ -15,7 +15,15 @@
         <h1>Регистрация пользователя</h1>
         
         <form method="POST">{% csrf_token %}
-            {{ model.as_p }}
+
+            <label for="id_username">Введите имя пользователя:</label>{{ model.username }}
+
+            <label for="id_email">Введите email</label>{{ model.email }}
+
+            <label for="id_password1">Введите пароль:</label>{{ model.password1 }}
+
+            <label for="id_password2">Повторите пароль:</label>{{ model.password2 }}
+
             <button class="dropbtn" type="submit" size="40">Отправить данные</button>
         </form>
 

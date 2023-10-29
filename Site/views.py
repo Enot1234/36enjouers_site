@@ -17,7 +17,7 @@ def tariffs(request):
 
 def registerSchool(request):
     if request.method == "POST":
-        form = RegSchool(request.POST)
+        form = RegSchoolForm(request.POST)
 
         if form.is_valid():
             post = form.save(commit=False)
@@ -26,16 +26,16 @@ def registerSchool(request):
         
         return redirect('organization', pk=post.id)
     else:
-        form = RegSchool()
+        form = RegSchoolForm()
 
     return render(request, "register/RegisterSchool.html", {"model": form})
 
 
 def regUser(request):
     if request.method == "POST":
-        form = RegUser(request.POST)
+        form = RegUserForm(request.POST)
     else:
-        form = RegUser()
+        form = RegUserForm()
 
     return render(request, "register/RegisterUser.html", {"model": form})
 
@@ -45,3 +45,8 @@ def organization(request, pk):
 
     return render(request, "office/organization.html", {"model": bd})
 
+def login(request):
+    if request.method == "POST":
+        return redirect('home')
+
+    return render(request, "register/login.html")
