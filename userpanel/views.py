@@ -11,8 +11,9 @@ def lichniy_kabinet(request):
     tests = Test.objects.filter(user=usr)
     results = Result.objects.filter(user=usr)
     courses = Study.objects.filter(user=usr)
+    group = list(usr.groups.all())[0]
 
-    return render(request, "office/PersonalArea.html", {"tests": tests, "results": results, "courses": courses, "user": usr})
+    return render(request, "office/PersonalArea.html", {"tests": tests, "results": results, "courses": courses, "user": usr, "group": group})
 
 @login_required
 def adminarea(request):
