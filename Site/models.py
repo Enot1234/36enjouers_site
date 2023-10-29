@@ -7,7 +7,7 @@ class school(models.Model):
     FIO = models.CharField("ФИО", max_length=70)
     tel = models.IntegerField("Телефон")
     email = models.EmailField("email")
-    INN = models.PositiveIntegerField("INN")
+    INN = models.PositiveIntegerField("ИНН")
     name = models.CharField("Название организации", max_length=50)
     adress = models.CharField("Адрес организации", max_length=200)
 

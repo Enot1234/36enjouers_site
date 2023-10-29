@@ -17,5 +17,5 @@ class RegSchoolForm(forms.ModelForm):
 class RegUserForm(UserCreationForm):
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        fields = ['username', 'email', 'groups', 'password1', 'password2']
 
