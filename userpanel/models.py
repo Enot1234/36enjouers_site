@@ -1,5 +1,7 @@
 from django.db import models
+from django.conf import settings
 class Test(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
     link = models.TextField("Ссылка", max_length=120)
 
@@ -10,6 +12,7 @@ class Test(models.Model):
         verbose_name_plural = "Тесты"
 
 class Result(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
     link = models.TextField("Ссылка", max_length=120)
 
@@ -20,6 +23,7 @@ class Result(models.Model):
         verbose_name_plural = "Результаты"
 
 class Study(models.Model):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
     link = models.TextField("Ссылка", max_length=120)
 
