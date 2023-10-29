@@ -1,9 +1,11 @@
 from django.db import models
 from django.conf import settings
+
+
 class Test(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
-    link = models.TextField("Ссылка", max_length=120)
+    link = models.CharField("Ссылка", max_length=200)
 
     def __str__(self): return self.title
 
@@ -14,7 +16,7 @@ class Test(models.Model):
 class Result(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
-    link = models.TextField("Ссылка", max_length=120)
+    link = models.CharField("Ссылка", max_length=200)
 
     def __str__(self): return self.title
 
@@ -25,7 +27,7 @@ class Result(models.Model):
 class Study(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField("Название", max_length=100)
-    link = models.TextField("Ссылка", max_length=120)
+    link = models.CharField("Ссылка", max_length=200)
 
     def __str__(self): return self.title
 

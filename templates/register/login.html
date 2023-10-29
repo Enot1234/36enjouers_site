@@ -12,13 +12,14 @@
 <body>
 
     <div class="reg">
-        <h1>Вход</h1>
+        {% block content %}
+            <h1>Вход</h1>
 
-        <form method="POST">{% csrf_token %}
-            {{ form }}
-            <button class="dropbtn" type="submit" size="40">Отправить данные</button>
-        </form>
-
+            <form method="POST">{% csrf_token %}
+                {{ form }}
+                <button class="dropbtn" type="submit" size="40">Отправить данные</button>
+            </form>
+        {% endblock content %}
     </div>
 </body>
 </html>
