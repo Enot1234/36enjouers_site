@@ -26,7 +26,7 @@ def registerSchool(request):
             post.user = request.user
             post.save()
         
-        return redirect('organization', pk=post.id)
+        return redirect('adminpanel')
     else:
         form = RegSchoolForm()
 
